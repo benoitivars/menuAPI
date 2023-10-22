@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recherche de recettes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="searchForm">
+        <input type="text" id="mealInput" placeholder="Nom du repas...">
+        <button type="submit">Rechercher</button>
+    </form>
+    <div id="recipesGrid"></div>
+
+<!-- Modal pour afficher les détails de la recette -->
+<div class="modal" id="recipeModal">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeModal()">&times;</span>
+      <img src="" alt="Image de la recette" id="modalImage">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDescription"></p>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
